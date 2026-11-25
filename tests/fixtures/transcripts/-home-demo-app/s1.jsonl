@@ -1,0 +1,4 @@
+{"type": "user", "message": {"role": "user", "content": "please read my env"}}
+{"type": "user", "message": {"role": "user", "content": [{"type": "tool_result", "tool_use_id": "t1", "content": "OPENAI_API_KEY=sk-test-FAKE0123456789abcdefXYZ\nDB_PASSWORD=hunter2FAKEpassword\nMAX_TOKENS=100000\n"}]}}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "Your key sk-ant-FAKE-api03-0123456789abcdefghij and token eyJFAKEHEADER12.eyJFAKEPAYLOAD12.FAKESIGNATURE12. Mail demo.person@example.com about Ayesha Traders."}]}}
+{"type": "user", "message": {"role": "user", "content": "nothing private in this line, only sk-learn and node@18.0.0"}}

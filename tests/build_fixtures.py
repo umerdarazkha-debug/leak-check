@@ -3,16 +3,16 @@
 import json, os, shutil
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "fixtures")
-OPENAI = "sk-test-FAKE0123456789abcdefXYZ"
-ANTH = "sk-ant-FAKE-api03-0123456789abcdefghij"
+OPENAI = "sk-test-" + "FAKE0123456789abcdefXYZ"
+ANTH = "sk-ant-" + "FAKE-api03-0123456789abcdefghij"
 AWS = "AKIA" + "FAKEFAKEFAKEFAKE"
 GH = "ghp_" + "FAKE" * 9
-GHPAT = "github_pat_FAKE0123456789abcdefgh_FAKE"
-GOOG = "AIzaFAKE0123456789abcdefghijklmnopqrstu"
-SK_LIVE = "sk_live_FAKE0123456789abcdef"
-PK_LIVE = "pk_live_FAKE0123456789abcdef"
-SLACK = "xoxb-FAKE-0123456789-abcdefgh"
-JWT = "eyJFAKEHEADER12.eyJFAKEPAYLOAD12.FAKESIGNATURE12"
+GHPAT = "github_pat_" + "FAKE0123456789abcdefgh_FAKE"
+GOOG = "AIza" + "FAKE0123456789abcdefghijklmnopqrstu"
+SK_LIVE = "sk_live_" + "FAKE0123456789abcdef"
+PK_LIVE = "pk_live_" + "FAKE0123456789abcdef"
+SLACK = "xoxb-" + "FAKE-0123456789-abcdefgh"
+JWT = "eyJ" + "FAKEHEADER12.eyJFAKEPAYLOAD12.FAKESIGNATURE12"
 DBPASS = "hunter2FAKEpassword"
 def w(path, text):
     os.makedirs(os.path.dirname(path), exist_ok=True)

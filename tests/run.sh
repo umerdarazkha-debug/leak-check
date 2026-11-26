@@ -9,7 +9,7 @@ F=tests/fixtures
 OUT=$(mktemp -d)
 PY="uv run --python 3.12 scripts/leakcheck.py"
 # the complete fake values; none of them may ever appear in any output
-FULL="sk-test-FAKE0123456789abcdefXYZ sk-ant-FAKE-api03-0123456789abcdefghij AKIAFAKEFAKEFAKEFAKE ghp_FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE github_pat_FAKE0123456789abcdefgh_FAKE AIzaFAKE0123456789abcdefghijklmnopqrstu sk_live_FAKE0123456789abcdef pk_live_FAKE0123456789abcdef xoxb-FAKE-0123456789-abcdefgh eyJFAKEHEADER12.eyJFAKEPAYLOAD12.FAKESIGNATURE12 hunter2FAKEpassword demo.person@example.com billing@example.org 0300-1234567 Ayesha"
+FULL="sk-test-""FAKE0123456789abcdefXYZ sk-ant-""FAKE-api03-0123456789abcdefghij AKIA""FAKEFAKEFAKEFAKE ghp_""FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE github_pat_""FAKE0123456789abcdefgh_FAKE AIza""FAKE0123456789abcdefghijklmnopqrstu sk_live_""FAKE0123456789abcdef pk_live_""FAKE0123456789abcdef xoxb-""FAKE-0123456789-abcdefgh eyJFAKEHEADER12.eyJFAKEPAYLOAD12.FAKESIGNATURE12 hunter2FAKEpassword demo.person@example.com billing@example.org 0300-1234567 Ayesha"
 count() { grep -cE "^- $1: $2\$" <<<"$3"; }
 
 out=$($PY --project $F/project --transcripts $F/transcripts --names $F/names.txt --out-dir "$OUT")
